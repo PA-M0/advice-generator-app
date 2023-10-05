@@ -1,0 +1,13 @@
+.card{
+  width: 29rem;
+  height: 20rem;
+  max-width: 27.8rem;
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+
+  &__footer{
+    &:hover{
+      box-shadow:0 15px 50px 25px rgba(82,255,168,1)
+    }
+  }
+}
