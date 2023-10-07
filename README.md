@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Add live site URL here](https:/raw.githack.com/PA-M0/advice-generator-app/)
 
 ## My process
 
