@@ -28,6 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" type="text/css" href="app/css/style.css" />
+  <script src="app/js/script.js" defer></script>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -35,24 +36,25 @@
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
 
-  "<!-- Advice text goes here -->"
-  <div class="card position-relative m-auto d-flex flex-column justify-content-around align-items-center pt-5">
+
+
+  <div class="card position-relative mx-auto d-flex flex-column justify-content-around align-items-center pt-5">
     <div class="card__header">
       <span style="letter-spacing: 3px;">ADVICE</span>
       <span>#</span>
-      <span>202</span>
+      <span id="adviceNumber"></span>
     </div>
     <div class="card__content" style=" text-align: center">
-      <p style="color:var(--advice-txt);">Never waste an opportunity to tell someone you love them.</p>
+      <p id="adviceMessage" style="color:var(--advice-txt);"></p>
     </div>
     <div class="card__hr">
-      <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+      <svg id="mySvg" width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+      <svg id="mySvg1" width="295" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/><g transform="translate(138)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
     </div>
     <div class="card__footer">
-      <button class="position-absolute" style="top:18rem;left:12.3rem;background-color: var(--advice-number); border-style: none; border-radius: 50%; width:58px;height: 58px; ">
-        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+      <button onclick="sendData()" class="position-absolute" style="top:18rem;left:12.2rem;background-color: var(--advice-number); border-style: none; border-radius: 50%; width:58px;height: 58px; ">
+        <svg  width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
       </button>
     </div>
   </div>
@@ -79,6 +81,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Parsa Shafagh (PA_M0)</a>.
   </div>
+
   <!-- MDB -->
   <script
           type="text/javascript"
