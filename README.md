@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/fetch-api-mdb-scss-js-5ItQhqtGiu)
-- Live Site URL: [Add live site URL here](https:/raw.githack.com/PA-M0/advice-generator-app/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/fetch-api-mdb-scss-js-5ItQhqtGiu)
+- Live Site URL: [live Demo](https://pa-m0.github.io/advice-generator-app/)
 
 ## My process
 
