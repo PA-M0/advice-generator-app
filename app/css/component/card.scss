@@ -4,10 +4,20 @@
   max-width: 27.8rem;
   background-color: var(--bg-card);
   border-radius: 1rem;
-
+  margin-top: 7rem;
+  padding:1rem;
   &__footer{
     &:hover{
       box-shadow:0 15px 50px 25px rgba(82,255,168,1)
     }
+  }
+}
+@media only screen and (min-width: 460px) {
+  #mySvg1 {
+    display: none;
+  }
+}@media only screen and (max-width: 459px) {
+  #mySvg {
+    display: none;
   }
 }

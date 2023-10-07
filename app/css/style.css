@@ -20,6 +20,21 @@ h3 {
   color: var(--advice-txt);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 460px) {
+  .card {
+    max-width: 20rem !important;
+  }
+  .card__footer button {
+    position: absolute;
+    top: 18rem;
+    left: 8.2rem !important;
+  }
+}
 :root {
   --myFont: "Manrope", sans-serif;
 }
@@ -48,9 +63,22 @@ body {
   max-width: 27.8rem;
   background-color: var(--bg-card);
   border-radius: 1rem;
+  margin-top: 7rem;
+  padding: 1rem;
 }
 .card__footer:hover {
   box-shadow: 0 15px 50px 25px rgb(82, 255, 168);
+}
+
+@media only screen and (min-width: 460px) {
+  #mySvg1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 459px) {
+  #mySvg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

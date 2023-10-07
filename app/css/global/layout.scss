@@ -1,3 +1,17 @@
 body{
-  
+  margin:0;
+  padding:0;
+
+}
+@media screen and (max-width: 460px) {
+  .card{
+    max-width: 20rem !important;
+    &__footer{
+      button {
+        position: absolute;
+        top: 18rem;
+        left: 8.2rem !important;
+      }
+    }
+  }
 }
